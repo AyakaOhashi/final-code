@@ -12,3 +12,18 @@
 /Users/oohashishunatsu/Desktop/Summer/1410/final/obj/Debug/net9.0/final.pdb
 /Users/oohashishunatsu/Desktop/Summer/1410/final/obj/Debug/net9.0/final.genruntimeconfig.cache
 /Users/oohashishunatsu/Desktop/Summer/1410/final/obj/Debug/net9.0/ref/final.dll
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/bin/Debug/net9.0/final
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/bin/Debug/net9.0/final.deps.json
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/bin/Debug/net9.0/final.runtimeconfig.json
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/bin/Debug/net9.0/final.dll
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/bin/Debug/net9.0/final.pdb
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/obj/Debug/net9.0/final.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/obj/Debug/net9.0/final.AssemblyInfoInputs.cache
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/obj/Debug/net9.0/final.AssemblyInfo.cs
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/obj/Debug/net9.0/final.csproj.CoreCompileInputs.cache
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/obj/Debug/net9.0/final.sourcelink.json
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/obj/Debug/net9.0/final.dll
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/obj/Debug/net9.0/refint/final.dll
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/obj/Debug/net9.0/final.pdb
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/obj/Debug/net9.0/final.genruntimeconfig.cache
+/Users/oohashishunatsu/Desktop/Summer/1410/final code/obj/Debug/net9.0/ref/final.dll

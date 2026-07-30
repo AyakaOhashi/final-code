@@ -10,28 +10,21 @@ public class Reservation
 
     public int PartySize { get; private set; }
 
-    public Reservation(
-        int reservationId,
-        string customerName,
-        DateTime reservationTime,
-        int partySize)
+    public Reservation(int reservationId,string customerName, DateTime reservationTime,int partySize)
     {
         if (string.IsNullOrWhiteSpace(customerName))
         {
-            throw new ArgumentException(
-                "Customer name cannot be empty.");
+            throw new ArgumentException("Customer name cannot be empty.");
         }
 
         if (reservationTime <= DateTime.Now)
         {
-            throw new ArgumentException(
-                "Reservation must be in the future.");
+            throw new ArgumentException("Reservation must be in the future.");
         }
 
         if (partySize <= 0)
         {
-            throw new ArgumentException(
-                "Party size must be greater than zero.");
+            throw new ArgumentException("Party size must be greater than zero.");
         }
 
         ReservationId = reservationId;

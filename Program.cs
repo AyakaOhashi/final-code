@@ -25,7 +25,7 @@ internal class Program
             DisplayOptions();
 
             string choice =
-                Console.ReadLine()?.Trim()
+                Console.ReadLine().Trim()
                 ?? string.Empty;
 
             try
@@ -37,9 +37,7 @@ internal class Program
                         break;
 
                     case "2":
-                        AddItem(
-                            menuService,
-                            currentOrder);
+                        AddItem(menuService,currentOrder);
                         break;
 
                     case "3":
@@ -47,17 +45,13 @@ internal class Program
                         break;
 
                     case "4":
-                        await fileService
-                            .SaveOrderAsync(currentOrder);
+                        await fileService.SaveOrderAsync(currentOrder);
 
-                        Console.WriteLine(
-                            "Order saved.");
+                        Console.WriteLine("Order saved.");
                         break;
 
                     case "5":
-                        Order? loadedOrder =
-                            await fileService
-                                .LoadOrderAsync();
+                        Order? loadedOrder = await fileService.LoadOrderAsync();
 
                         if (loadedOrder == null)
                         {
@@ -68,8 +62,7 @@ internal class Program
                         {
                             currentOrder = loadedOrder;
 
-                            Console.WriteLine(
-                                "Order loaded.");
+                            Console.WriteLine("Order loaded.");
                         }
 
                         break;
@@ -77,28 +70,23 @@ internal class Program
                     case "6":
                         currentOrder.CompleteOrder();
 
-                        Console.WriteLine(
-                            "Processing payment...");
+                        Console.WriteLine("Processing payment...");
 
                         await Task.Delay(1000);
 
-                        await fileService
-                            .AddSaleAsync(currentOrder);
+                        await fileService.AddSaleAsync(currentOrder);
 
-                        Console.WriteLine(
-                            "Order completed.");
+                        Console.WriteLine("Order completed.");
 
                         currentOrder = CreateOrder();
                         break;
 
                     case "7":
-                        CreateReservation(
-                            reservationService);
+                        CreateReservation(reservationService);
                         break;
 
                     case "8":
-                        reservationService
-                            .DisplayReservations();
+                        reservationService.DisplayReservations();
                         break;
 
                     case "9":
@@ -106,24 +94,19 @@ internal class Program
                         break;
 
                     case "10":
-                        List<Order> sales =
-                            await fileService
-                                .LoadSalesAsync();
+                        List<Order> sales =await fileService.LoadSalesAsync();
 
-                        SalesReportService
-                            .DisplayReport(sales);
+                        SalesReportService.DisplayReport(sales);
                         break;
 
                     case "0":
                         running = false;
 
-                        Console.WriteLine(
-                            "Program closed.");
+                        Console.WriteLine("Program closed.");
                         break;
 
                     default:
-                        Console.WriteLine(
-                            "Please enter a valid option.");
+                        Console.WriteLine("Please enter a valid option.");
                         break;
                 }
             }
@@ -149,9 +132,7 @@ internal class Program
             }
             catch (Exception exception)
             {
-                Console.WriteLine(
-                    $"Unexpected Error: " +
-                    $"{exception.Message}");
+                Console.WriteLine($"Unexpected Error: {exception.Message}");
             }
         }
     }
@@ -175,8 +156,7 @@ internal class Program
 
     private static Order CreateOrder()
     {
-        Console.Write(
-            "Customer name: ");
+        Console.Write("Customer name: ");
 
         string customerName =
             Console.ReadLine()?.Trim()
@@ -196,8 +176,7 @@ internal class Program
         Console.WriteLine("2. Takeout");
         Console.WriteLine("3. Delivery");
 
-        int orderTypeNumber =
-            ReadNumber("Order type: ");
+        int orderTypeNumber =ReadNumber("Order type: ");
 
         OrderType orderType =
             orderTypeNumber switch
@@ -219,34 +198,26 @@ internal class Program
     {
         menuService.DisplayMenu();
 
-        int itemId =
-            ReadNumber("Item ID: ");
+        int itemId = ReadNumber("Item ID: ");
 
-        int quantity =
-            ReadNumber("Quantity: ");
+        int quantity = ReadNumber("Quantity: ");
 
-        MenuItem item =
-            menuService.GetItem(itemId);
+        MenuItem item = menuService.GetItem(itemId);
 
         order.AddItem(item, quantity);
 
-        Console.WriteLine(
-            $"{item.Name} was added.");
+        Console.WriteLine($"{item.Name} was added.");
     }
 
     private static void CreateReservation(
         ReservationService reservationService)
     {
-        Console.Write(
-            "Customer name: ");
+        Console.Write("Customer name: ");
 
         string customerName =
-            Console.ReadLine()?.Trim()
-            ?? string.Empty;
+            Console.ReadLine()?.Trim()?? string.Empty;
 
-        Console.Write(
-            "Date and time " +
-            "(example: 2026-07-30 18:00): ");
+        Console.Write("Date and time (example: 2026-07-30 18:00): ");
 
         string input =
             Console.ReadLine()?.Trim()
@@ -286,9 +257,7 @@ internal class Program
             Console.ReadLine()?.Trim()
             ?? string.Empty;
 
-        if (!decimal.TryParse(
-                input,
-                out decimal maximumPrice))
+        if (!decimal.TryParse(input,out decimal maximumPrice))
         {
             Console.WriteLine(
                 "Invalid price.");
@@ -318,14 +287,12 @@ internal class Program
                 Console.ReadLine()?.Trim()
                 ?? string.Empty;
 
-            if (int.TryParse(input, out int number)
-                && number > 0)
+            if (int.TryParse(input, out int number)&& number > 0)
             {
                 return number;
             }
 
-            Console.WriteLine(
-                "Please enter a positive number.");
+            Console.WriteLine("Please enter a positive number.");
         }
     }
 }

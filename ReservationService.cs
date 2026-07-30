@@ -48,8 +48,7 @@ public class ReservationService
 
         if (reservations.Count == 0)
         {
-            Console.WriteLine(
-                "No reservations found.");
+            Console.WriteLine("No reservations found.");
 
             return;
         }
@@ -57,11 +56,8 @@ public class ReservationService
         foreach (Reservation reservation
                  in reservations)
         {
-            Console.WriteLine(
-                $"#{reservation.ReservationId} | " +
-                $"{reservation.CustomerName} | " +
-                $"{reservation.ReservationTime:g} | " +
-                $"Party of {reservation.PartySize}");
+            Console.WriteLine($"#{reservation.ReservationId} | {reservation.CustomerName} | " +
+                $"{reservation.ReservationTime:g} | Party of {reservation.PartySize}");
         }
     }
 }

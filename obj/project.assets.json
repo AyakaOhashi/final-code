@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/oohashishunatsu/Desktop/Summer/1410/final/final.csproj",
+      "projectUniqueName": "/Users/oohashishunatsu/Desktop/Summer/1410/final code/final.csproj",
       "projectName": "final",
-      "projectPath": "/Users/oohashishunatsu/Desktop/Summer/1410/final/final.csproj",
+      "projectPath": "/Users/oohashishunatsu/Desktop/Summer/1410/final code/final.csproj",
       "packagesPath": "/Users/oohashishunatsu/.nuget/packages/",
-      "outputPath": "/Users/oohashishunatsu/Desktop/Summer/1410/final/obj/",
+      "outputPath": "/Users/oohashishunatsu/Desktop/Summer/1410/final code/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/oohashishunatsu/.nuget/NuGet/NuGet.Config"

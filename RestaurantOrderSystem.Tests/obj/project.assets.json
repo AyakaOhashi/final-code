@@ -933,11 +933,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/oohashishunatsu/Desktop/Summer/1410/final/RestaurantOrderSystem.Tests/RestaurantOrderSystem.Tests.csproj",
+      "projectUniqueName": "/Users/oohashishunatsu/Desktop/Summer/1410/final code/RestaurantOrderSystem.Tests/RestaurantOrderSystem.Tests.csproj",
       "projectName": "RestaurantOrderSystem.Tests",
-      "projectPath": "/Users/oohashishunatsu/Desktop/Summer/1410/final/RestaurantOrderSystem.Tests/RestaurantOrderSystem.Tests.csproj",
+      "projectPath": "/Users/oohashishunatsu/Desktop/Summer/1410/final code/RestaurantOrderSystem.Tests/RestaurantOrderSystem.Tests.csproj",
       "packagesPath": "/Users/oohashishunatsu/.nuget/packages/",
-      "outputPath": "/Users/oohashishunatsu/Desktop/Summer/1410/final/RestaurantOrderSystem.Tests/obj/",
+      "outputPath": "/Users/oohashishunatsu/Desktop/Summer/1410/final code/RestaurantOrderSystem.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/oohashishunatsu/.nuget/NuGet/NuGet.Config"
@@ -952,8 +952,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/oohashishunatsu/Desktop/Summer/1410/final/final.csproj": {
-              "projectPath": "/Users/oohashishunatsu/Desktop/Summer/1410/final/final.csproj"
+            "/Users/oohashishunatsu/Desktop/Summer/1410/final code/final.csproj": {
+              "projectPath": "/Users/oohashishunatsu/Desktop/Summer/1410/final code/final.csproj"
             }
           }
         }
