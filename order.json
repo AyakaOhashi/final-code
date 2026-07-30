@@ -1,0 +1,15 @@
+{
+  "OrderId": 1486,
+  "CustomerName": "ayaka",
+  "Type": 1,
+  "CreatedAt": "2026-07-30T12:49:21.595346+09:00",
+  "Items": [
+    {
+      "MenuItemId": 1,
+      "Name": "Cheeseburger",
+      "UnitPrice": 12.50,
+      "Quantity": 3,
+      "LineTotal": 37.50
+    }
+  ]
+}
