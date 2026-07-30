@@ -10,14 +10,12 @@ public static class SalesReportService
         Console.WriteLine();
         Console.WriteLine("===== SALES REPORT =====");
 
-        Console.WriteLine(
-            $"Completed Orders: {orders.Count}");
+        Console.WriteLine($"Completed Orders: {orders.Count}");
 
         decimal totalRevenue = orders.Sum(
             order => order.CalculateTotal());
 
-        Console.WriteLine(
-            $"Total Revenue: ${totalRevenue:F2}");
+        Console.WriteLine($"Total Revenue: ${totalRevenue:F2}");
 
         var topItems = orders
             .SelectMany(order => order.Items)
